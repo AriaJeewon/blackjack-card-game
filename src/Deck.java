@@ -17,21 +17,16 @@ public class Deck {
 
                 if (r.equals("Ace")){
                     val = 11;
-                }
-                else if (r.equals("Jack") || r.equals("Queen") || r.equals("King")){
+                }else if (r.equals("Jack") || r.equals("Queen") || r.equals("King")){
                     val = 10;
-                }
-                else {
+                }else {
                     val = Integer.parseInt(r);
                 }
 
                 cards.add(new Card(s,r, val));
             }
         }
-
     }
-
-
 
     public void shuffle(){
         Collections.shuffle(cards);
@@ -45,3 +40,4 @@ public class Deck {
         return cards.size();
     }
 }
+
