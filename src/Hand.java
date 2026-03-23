@@ -34,7 +34,12 @@ public class Hand {
         for (Card c: cards){
             result += c + ", ";
         }
-        return result.isEmpty() ? result : result.substring(0, result.length() - 2);
+        if(result.isEmpty()) {
+            return result;
+        }
+        else {  
+            return result.substring(0, result.length() - 2);
+        }
     }
 
 }
