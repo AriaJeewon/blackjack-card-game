@@ -22,7 +22,6 @@ public class Dealer {
         hand.addCard(c);
     }
 
-
     public int getTotal(){
         return hand.getTotal();
     }
@@ -35,7 +34,7 @@ public class Dealer {
 
     @Override
     public String toString(){
-        return name + ": " + hand + " (total: " + hand.getTotal() + ")";
+        return name + ": " + hand + " (Hand total: " + hand.getTotal() + ")";
     }
 
 }
