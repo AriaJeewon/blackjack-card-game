@@ -22,14 +22,13 @@ public class Player {
         hand.addCard(c);
     }
 
-
     public int getTotal(){
         return hand.getTotal();
     }
 
     @Override
     public String toString(){
-        return name + ": " + hand + " (total: " + hand.getTotal() + ")";
+        return name + ": " + hand + " (Hand total: " + hand.getTotal() + ")";
     }
 
 }
