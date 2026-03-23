@@ -4,11 +4,10 @@ public class Card {
     private String rank;
     private int value;
 
-
-    public Card (String s, String r, int v){
-        this.suit = s;
-        this.rank = r;
-        this.value = v;
+    public Card (String suit, String rank, int value){
+        this.suit = suit;
+        this.rank = rank;
+        this.value = value;
     }
 
     public String getSuit(){
