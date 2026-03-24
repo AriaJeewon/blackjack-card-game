@@ -47,6 +47,26 @@ public class Game {
             dealer.play(deck);
             System.out.println(dealer);
         }
+
+        System.out.println("\nResult");
+        int pTotal = player.getTotal();
+        int dTotal = dealer.getTotal();
+
+        if (pTotal > 21){
+            System.out.println("You busted!. Dealer wins");
+        }
+        else if (dTotal > 21){
+            System.out.println("Dealer busted. You win!");
+        }
+        else if (pTotal > dTotal){
+            System.out.println("You win with " + pTotal + " vs " + dTotal);
+        }
+        else if (dTotal > pTotal){
+            System.out.println("Dealer wins with " + dTotal + " vs " + pTotal);
+        }
+        else {
+            System.out.println("It is a tie at " + pTotal);
+        }
       
         
     }
