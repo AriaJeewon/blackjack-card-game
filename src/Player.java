@@ -28,7 +28,8 @@ public class Player {
 
     @Override
     public String toString(){
-        return name + ": " + hand + " (Hand total: " + hand.getTotal() + ")";
+        String cards = hand.toString().replace("\n", "\n  ");
+        return name + ":\n  " + cards + "\nTotal: " + hand.getTotal();
     }
 
 }

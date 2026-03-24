@@ -32,14 +32,9 @@ public class Hand {
     public String toString(){
         String result = "";
         for (Card c: cards){
-            result += c + ", ";
+            result += c + "\n";
         }
-        if(result.isEmpty()) {
-            return result;
-        }
-        else {  
-            return result.substring(0, result.length() - 2);
-        }
+        return result.trim();
     }
 
 }
