@@ -35,13 +35,12 @@ public class Game {
                     System.out.println("Bust! You went over 21.");
                     break;
                 }
-
             }
             else if (decision.equals("s")){
                     System.out.println("You stand at " + player.getTotal());
                     break;    
             }
-            
+
         }
         
     }
