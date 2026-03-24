@@ -42,6 +42,12 @@ public class Game {
             }
 
         }
+        if (player.getTotal() <=21){
+              System.out.println("Dealer's Turn");
+            dealer.play(deck);
+            System.out.println(dealer);
+        }
+      
         
     }
 
